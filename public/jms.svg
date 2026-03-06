@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="James Twose monogram">
+  <!-- Background matches the dark card block -->
+  <rect width="100" height="100" rx="12" ry="12" fill="#1e1e1e"/>
+  <!-- JT monogram, using system fonts as a fallback -->
+  <text x="50" y="62" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial" font-weight="800" font-size="56" fill="#b5f25a">JT</text>
+</svg>

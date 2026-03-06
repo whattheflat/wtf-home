@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  /* Brand Palette (The "DataAigency" Purple) */
+  --color-brand-50: #f8eef9;
+  --color-brand-100: #f3d9f2;
+  --color-brand-200: #e7b3e6;
+  --color-brand-300: #d78aca;
+  --color-brand-400: #b95fb0;
+  --color-brand-500: #781e70;
+  --color-brand-600: #5b154e;
+  --color-brand-700: #420f38;
+  --color-brand-800: #2d0a25;
+  --color-brand-900: #190512;
+
+  /* UI Colors */
+  --color-calm-bg: #0c0c0e;
+  --color-calm-card: #16161a;
+  --color-calm-accent: #781e70;
+  --color-calm-muted: #71717a;
+}
+
+@layer base {
+  body {
+    @apply bg-calm-bg text-zinc-300 font-sans antialiased;
+  }
+
+  /* Custom selection color using brand-500 at 30% opacity */
+  ::selection {
+    background-color: rgba(120, 30, 112, 0.3);
+    color: white;
+  }
+}
+
+/* Modern Tailwind v4 Utilities 
+   These act just like standard classes (e.g., <div class="glass">)
+*/
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility bento-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  @apply rounded-3xl p-6 transition-all duration-300;
+  
+  &:hover {
+    @apply border-white/20 bg-white/5;
+  }
+}
