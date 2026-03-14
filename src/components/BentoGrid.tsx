@@ -37,11 +37,11 @@ export default function BentoGrid() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="grid grid-cols-1 md:grid-cols-4 gap-4"
+        className="grid grid-cols-1 md:grid-cols-5 gap-4"
       >
         <motion.div
           variants={itemVariants}
-          className="md:col-span-3 md:row-span-2 bento-card flex flex-col md:flex-row gap-8 items-center overflow-hidden relative group"
+          className="md:col-span-4 md:row-span-2 bento-card flex flex-col md:flex-row gap-8 items-center overflow-hidden relative group"
         >
           <FeaturedApp />
         </motion.div>
@@ -70,7 +70,7 @@ export default function BentoGrid() {
           <FeatureCard Icon={Sparkles} title="Ad-Free" text="No distractions. Just you and your productivity." />
         </motion.div>
 
-        <motion.div variants={itemVariants} className="md:col-span-2">
+        <motion.div variants={itemVariants} className="md:col-span-3 bento-card bg-brand-500/5 border-brand-500/20">
           <DonateCard />
         </motion.div>
 
